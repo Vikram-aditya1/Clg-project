@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="main_div">
+
+    <div class="music_contain">
+      <h2 id="title"></h2>
+      <h3 id="singer"></h3>
+      <div class="img_contain">
+        <img src="image/file1.jpg" alt="" class="src">
+      </div>
+      <audio src="music/file1.mp3"></audio>
+      <div class="timer">00:00 / 00:00</div>
+      <input type="range" id="song-range" min="0" step="0.01" value="0">
+      <!---controls-->
+      <div class="music_control"> 
+        <i class="fa-solid fa-backward" id="prev"></i>
+        <i class="fa-solid fa-play main_control" id="play"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+      </div>
+    </div>
+  </div>
+  
+  <script src="Script.js"></script>
+</body>
+</html>
